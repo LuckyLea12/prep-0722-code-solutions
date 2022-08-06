@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+      align-items: center;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Complete the HTML here -->
+  <h1>Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg" alt="Raiders of the Lost Ark Img">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>I haven't seen any Indiana Jones film in years. They were really good movies when I was younger though.</p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg" alt="Temple of Doom Img">
+        <h3>Temple of Doom</h3>
+        <p>I think this is the one where he gets chased by the iconic bolder. I could be wrong though.</p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg" alt="The Last Crusade Img">
+        <h3>The Last Crusade</h3>
+        <p>I don't know if I've even see this one but I'm sure its just as good as the other two movies. I'll probably look it up on netflix after class now.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
